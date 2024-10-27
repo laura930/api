@@ -1,0 +1,23 @@
+body {
+    background-image: url('undraw_meditation_re_gll0.svg'); 
+    background-size: 50rem; 
+    background-repeat: no-repeat;
+    background-position:unset;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Color blanco con 50% de opacidad */
+    z-index: 1; /* atrás del contenido */
+}
+
+.container {
+    position: relative; 
+    z-index: 2; /* Para que el contenido esté por encima  de la img*/
+}
